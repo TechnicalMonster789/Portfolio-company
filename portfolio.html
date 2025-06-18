@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrameGenix Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px #00f0ff;
+    }
+
+    header h1 {
+      color: #00f0ff;
+      font-size: 2.5rem;
+      animation: glow 2s infinite alternate;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f0ff;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h2 {
+      color: #00f0ff;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #00f0ff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery div {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #333;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery div:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00f0ff;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00f0ff33;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00f0ff;
+    }
+
+    .gallery img.horizontal {
+      height: auto;
+      max-height: 250px;
+      object-fit: contain;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      box-shadow: 0 -5px 20px #00f0ff;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff; }
+      100% { text-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .subsection {
+      margin-top: 40px;
+    }
+
+    .subsection h3 {
+      color: #00f0ff;
+      margin-bottom: 15px;
+      border-left: 5px solid #00f0ff;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>FrameGenix</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Welcome to FrameGenix! We are a creative studio that blends technology and design to craft visually stunning digital content. We specialize in personalized AI-generated portraits that preserve your face, expression, and identity while transforming the style and background using advanced techniques.</p>
+    <p>Whether you're looking for cinematic, realistic, animated, or artistic images, our tools ensure your unique facial features remain untouched — just with an all-new vibe. Additionally, our poster-making experts create high-quality visuals for birthdays, events, product launches, and social media that truly stand out.</p>
+    <p>At FrameGenix, we combine innovation and aesthetics to turn your vision into scroll-stopping reality.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="subsection">
+      <h3>Poster Designs</h3>
+      <div class="gallery">
+        <div><img src="/WhatsApp Image 2025-06-18 at 08.12.11_3cbc96b4.jpg" alt="Poster 1"></div>
+        <div><img src="/WhatsApp Image 2025-06-18 at 08.12.11_ae93680f.jpg" alt="Poster 2"></div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>AI Generated Images</h3>
+      <div class="gallery">
+        <div><img src="/WhatsApp Image 2025-06-18 at 08.12.11_b8dbe107.jpg" alt="AI Image 1"></div>
+        <div><img class="horizontal" src="/WhatsApp Image 2025-06-18 at 08.12.35_efbc6823.jpg" alt="AI Image 2"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/919876543210" style="color:#00f0ff;">+91 98765 43210</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FrameGenix. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
